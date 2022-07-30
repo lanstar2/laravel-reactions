@@ -3,12 +3,11 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Laravel Reactions is the package you need if you want to implement reactions for your Eloquent models, in a similar way you can see on Facebook.
+Laravel Reactions is the package you need if you want to implement reactions for your Eloquent models, similarly you can see on Facebook.
 
-![](https://cdn.devdojo.com/open-source/reactions.jpg)
+![](https://cdn.Kesty.com/open-source/reactions.jpg)
 
 #### Features
 
@@ -26,13 +25,13 @@ Laravel Reactions is the package you need if you want to implement reactions for
 Install the package with Composer.
 
 ``` bash
-$ composer require DevDojo/laravel-reactions
+$ composer require kesty/laravel-reactions
 ```
 
 Add the Service Provider to your `config/app.php` file.
 
 ```php
-DevDojo\LaravelReactions\Providers\ReactionsServiceProvider::class,
+Kesty\LaravelReactions\Providers\ReactionsServiceProvider::class,
 ```
 
 Run the migrations to create `reactions` and `reactables` tables.
@@ -49,9 +48,9 @@ You're good to go.
 
 To use the package you need to follow two steps:
 
-* add the `DevDojo\LaravelReactions\Traits\Reacts` trait to the entity that is going to react to something;
-* add the `DevDojo\LaravelReactions\Traits\Reactable` trait to the entity that is going to "receive" reactions;
-* be sure that the entity that receives reactions also implements the `DevDojo\LaravelReactions\Contracts\ReactableInterface`;
+* add the `Kesty\LaravelReactions\Traits\Reacts` trait to the entity that is going to react to something;
+* add the `Kesty\LaravelReactions\Traits\Reactable` trait to the entity that is going to "receive" reactions;
+* be sure that the entity that receives reactions also implements the `Kesty\LaravelReactions\Contracts\ReactableInterface`;
 
 Let's make an example.
 
@@ -61,10 +60,10 @@ You want to let your user add reactions to your posts. Just like Facebook, you k
 
 Let's say we have two models: `User` and `Post`.
 
-Following the steps, we first add the `DevDojo\LaravelReactions\Traits\Reacts` trait to our `User` model.
+Following the steps, we first add the `Kesty\LaravelReactions\Traits\Reacts` trait to our `User` model.
 
 ```php
-use DevDojo\LaravelReactions\Traits\Reacts;
+use Kesty\LaravelReactions\Traits\Reacts;
 
 class User extends Model {
     use Reacts;
@@ -74,8 +73,8 @@ class User extends Model {
 Done! Now, to the `Post` model!
 
 ```php
-use DevDojo\LaravelReactions\Traits\Reactable;
-use DevDojo\LaravelReactions\Contracts\ReactableInterface;
+use Kesty\LaravelReactions\Traits\Reactable;
+use Kesty\LaravelReactions\Contracts\ReactableInterface;
 
 class Post extends Model implements ReactableInterface {
     use Reactable;
@@ -204,24 +203,22 @@ If you discover any security related issues, please email hellofrancesco@gmail.c
 
 ## Credits
 
-- [Francesco Malatesta][link-author]
+- [Olubunmi Tosin][link-author]
 - [All Contributors][link-contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/DevDojo/laravel-reactions.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/kesty/laravel-reactions.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/DevDojo/laravel-reactions/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/DevDojo/laravel-reactions.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/DevDojo/laravel-reactions.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/DevDojo/laravel-reactions.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/kesty/laravel-reactions/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/kesty/laravel-reactions.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/kesty/laravel-reactions.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/kesty/laravel-reactions.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/DevDojo/laravel-reactions
-[link-travis]: https://travis-ci.org/DevDojo/laravel-reactions
-[link-scrutinizer]: https://scrutinizer-ci.com/g/DevDojo/laravel-reactions/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/DevDojo/laravel-reactions
-[link-downloads]: https://packagist.org/packages/DevDojo/laravel-reactions
-[link-author]: https://github.com/DevDojo
-[link-contributors]: ../../contributors
+[link-packagist]: https://packagist.org/packages/kesty/laravel-reactions
+[link-travis]: https://travis-ci.org/kesty/laravel-reactions
+[link-downloads]: https://packagist.org/packages/kesty/laravel-reactions
+[link-author]: https://github.com/olubunmitosin
+[link-contributors]: ../contributors

@@ -1,6 +1,6 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Tests\Integration;
+namespace Kesty\LaravelReactions\Tests\Integration;
 
 use Orchestra\Testbench\TestCase;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Tests\Integration\Support;
+namespace Kesty\LaravelReactions\Tests\Integration\Support;
 
 use Illuminate\Database\Eloquent\Model;
-use DevDojo\LaravelReactions\Contracts\ReactableInterface;
-use DevDojo\LaravelReactions\Traits\Reactable;
+use Kesty\LaravelReactions\Contracts\ReactableInterface;
+use Kesty\LaravelReactions\Traits\Reactable;
 
 class PostTestModel extends Model implements ReactableInterface
 {

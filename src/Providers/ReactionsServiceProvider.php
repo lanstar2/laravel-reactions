@@ -1,6 +1,6 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Providers;
+namespace Kesty\LaravelReactions\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

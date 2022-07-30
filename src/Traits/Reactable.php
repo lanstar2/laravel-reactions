@@ -1,6 +1,6 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Traits;
+namespace Kesty\LaravelReactions\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
@@ -13,7 +13,7 @@ trait Reactable
     public function reactions()
     {
         /** @var $this Model */
-        return $this->morphToMany('DevDojo\\LaravelReactions\\Models\\Reaction', 'reactable')
+        return $this->morphToMany('Kesty\\LaravelReactions\\Models\\Reaction', 'reactable')
             ->withPivot(['responder_id', 'responder_type']);
     }
 

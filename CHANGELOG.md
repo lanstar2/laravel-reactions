@@ -2,9 +2,7 @@
 
 All Notable changes to `laravel-reactions` will be documented in this file.
 
-Updates are following the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
-
-## 0.1.1 - 2017-03-26
+## 1.0.0 - 2022-07-30
 
 ### Added
 - `Reaction` model that represents a reaction;

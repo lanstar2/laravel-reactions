@@ -1,6 +1,6 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Contracts;
+namespace Kesty\LaravelReactions\Contracts;
 
 interface ReactableInterface
 {

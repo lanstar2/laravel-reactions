@@ -1,9 +1,9 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Traits;
+namespace Kesty\LaravelReactions\Traits;
 
-use DevDojo\LaravelReactions\Contracts\ReactableInterface;
-use DevDojo\LaravelReactions\Models\Reaction;
+use Kesty\LaravelReactions\Contracts\ReactableInterface;
+use Kesty\LaravelReactions\Models\Reaction;
 
 trait Reacts
 {
@@ -12,13 +12,13 @@ trait Reacts
         $reactedToReaction = $reactable->reactions()
             ->where('responder_id', $this->getKey())
             ->where('responder_type', get_class($this))->first();
-            
+
 
         $currentReactedName = '';
         if($reactedToReaction){
             $currentReactedName = $reactedToReaction->name;
             $this->deleteReaction($reactable, $reactedToReaction);
-            
+
         }
 
         $reacted = $reactable->reactions()->where([

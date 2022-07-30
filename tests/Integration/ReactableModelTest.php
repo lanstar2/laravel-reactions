@@ -1,11 +1,11 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Tests\Integration;
+namespace Kesty\LaravelReactions\Tests\Integration;
 
 use Illuminate\Database\Schema\Blueprint;
-use DevDojo\LaravelReactions\Models\Reaction;
-use DevDojo\LaravelReactions\Tests\Integration\Support\PostTestModel;
-use DevDojo\LaravelReactions\Tests\Integration\Support\UserTestModel;
+use Kesty\LaravelReactions\Models\Reaction;
+use Kesty\LaravelReactions\Tests\Integration\Support\PostTestModel;
+use Kesty\LaravelReactions\Tests\Integration\Support\UserTestModel;
 
 class ReactableModelTest extends BaseTestCase
 {

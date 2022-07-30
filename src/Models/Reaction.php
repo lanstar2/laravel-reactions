@@ -1,6 +1,6 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Models;
+namespace Kesty\LaravelReactions\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,7 +1,7 @@
 <?php
-namespace DevDojo\LaravelReactions\Tests\Unit;
+namespace Kesty\LaravelReactions\Tests\Unit;
 
-use DevDojo\LaravelReactions\Models\Reaction;
+use Kesty\LaravelReactions\Models\Reaction;
 
 class ReactionTest extends \PHPUnit\Framework\TestCase
 {

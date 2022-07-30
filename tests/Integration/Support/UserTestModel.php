@@ -1,9 +1,9 @@
 <?php
 
-namespace DevDojo\LaravelReactions\Tests\Integration\Support;
+namespace Kesty\LaravelReactions\Tests\Integration\Support;
 
 use Illuminate\Database\Eloquent\Model;
-use DevDojo\LaravelReactions\Traits\Reacts;
+use Kesty\LaravelReactions\Traits\Reacts;
 
 class UserTestModel extends Model
 {
